@@ -9,10 +9,48 @@
     <!-- tailwind css and daisy ui added here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google font added here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
-<body class="">
-    <h2>Hello world</h2>
+<body class="bg-slate-50 min-h-screen font-[Geist]">
+
+    <!-- login form section -->
+    <section class="login-form-container flex items-center justify-center min-h-screen">
+        <div class="form-div bg-white px-8 py-4 w-4/12 mx-auto text-center shadow-lg rounded-lg">
+            <div class="form-header text-center space-y-2">
+                <div>
+                    <img src="./images/github-logo.png" alt="" class="mx-auto">
+                </div>
+                <h1 class="text-2xl font-bold">GitHub Issues Tracker</h1>
+                <h3 class="text-lg font-semibold text-gray-600">Sign in to manage your issues</h3>
+            </div>
+            <form action="" class="form body text-left flex flex-col space-y-2 mt-4">
+                <label for="Username">Username</label>
+                <input type="text" placeholder="Enter Username" class="px-3 py-2 outline-none
+                 border-gray-300 rounded-md">
+                <span class="text-purple-700 text-sm">Default: admin</span>
+                <label for="Password" class="mt-3">Password</label>
+                <input type="text" placeholder="Enter Password" class="px-3 py-2 outline-none
+                 border-gray-300 rounded-md">
+                <span class="text-purple-700 text-sm">Default: admin123</span>
+
+                <!-- submit button -->
+                 <button class="btn btn-primary text-white">Sign In</button>
+                 <hr class="text-gray-300 mt-5">
+            </form>
+            <div class="form-footer mt-4">
+                <h5 class="text-gray-400 font-medium text-sm">Demo Credentials:</h5>
+                <div class="bg-slate-50 p-5">
+                    <h4><span class="font-bold mr-2">Username:</span><span>admin</span></h4>
+                    <h4><span class="font-bold mr-2">Password:</span><span>admin123</span></h4>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <!-- js file added here -->
     <script src="./script.js"></script>
