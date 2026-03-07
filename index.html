@@ -66,8 +66,10 @@
             </aside>
             <aside class="flex items-center justify-center gap-2">
                 <div class="relative">
-                    <input type="text" placeholder="Search Issues..." class="px-8 py-2 outline-none border-gray-300 rounded-md">
-                    <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-2 -translate-y-1/2 pointer-events-none text-slate-300"></i>
+                    <input type="text" placeholder="Search Issues..."
+                        class="px-8 py-2 outline-none border-gray-300 rounded-md">
+                    <i
+                        class="fa-solid fa-magnifying-glass absolute top-1/2 left-2 -translate-y-1/2 pointer-events-none text-slate-300"></i>
 
                 </div> <button class="btn btn-primary">
                     <i class="fa-solid fa-plus"></i>
@@ -75,6 +77,73 @@
                 </button>
             </aside>
         </header>
+        <!-- tabs sectoin -->
+        <section class="p-4 bg-white flex gap-2 items-center mt-14 w-11/12 mx-auto rounded-md shadow-sm">
+            <button class="btn w-28 btn-primary">All</button>
+            <button class="btn w-28">Open</button>
+            <button class="btn w-28">Closed</button>
+        </section>
+        <section class="w-11/12 mx-auto bg-gray-50 mt-5">
+            <!-- issues title bar -->
+            <div class="flex items-center justify-between bg-white shadow-sm p-4">
+                <div class="flex items-center gap-2">
+                    <div class="bg-purple-100 p-3 rounded-full">
+                        <img src="./images/Aperture.png" alt="">
+
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg"><span>50</span><span class="ml-1">Issues</span></h4>
+                        <p class="text-gray-400 text-sm">Track and manage your project issues</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-10">
+                    <h4 class="relative"><span
+                            class="bg-green-600 rounded-full w-3 h-3 top-1/2 -translate-y-1/2 -left-5 absolute"></span><span>Open</span>
+                    </h4>
+                    <h4 class="relative"><span
+                            class="bg-purple-600 rounded-full w-3 h-3 top-1/2 -translate-y-1/2 -left-5 absolute"></span><span>Closed</span>
+                    </h4>
+                </div>
+            </div>
+            <!-- isses container -->
+            <div class="grid grid-cols-4 shadow-md mt-4 gap-4">
+                <div class="p-3 rounded-md shadow-sm bg-white space-y-5">
+                    <div class="flex items-center justify-between">
+                        <img src="./images/Open-Status.png" alt="">
+                        <button class="bg-red-100 text-red-500 px-8 py-1 rounded-full text-sm">HIGH</button>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold">
+                            Fix navigation menu on mobile devices
+                        </h4>
+                        <p class="text-gray-400">
+                            The navigation menu doesn't collapse properly on mobile devices...
+                        </p>
+                    </div>
+                    <div>
+                        <button
+                            class="bg-red-100 text-red-500 px-3 py-1 border border-red-500/30 text-sm font-semibold rounded-full">
+                            <span>
+                                <i class="fa-solid fa-bug"></i>
+                            </span>
+                            <span>BUG</span>
+                        </button>
+                        <button class="bg-yellow-100 text-yellow-500 uppercase px-3 py-1 text-sm font-semibold rounded-full border border-yellow-500/40">
+                            <span>
+                                <i class="fa-solid fa-crosshairs"></i>
+                            </span>
+                            <span>Help Wanted </span>
+                        </button>
+                    </div>
+                    <div>
+                        <hr class="text-gray-300 mb-4">
+                        <p class="text-gray-400">#1 by john_doe</p>
+                        <p class="text-gray-400">1/15/2024</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
     <!-- js file added here -->
