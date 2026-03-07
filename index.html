@@ -13,12 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- fontawosome cdn added here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-slate-50 min-h-screen font-[Geist]">
 
     <!-- login form section -->
-    <section class="login-form-container flex items-center justify-center min-h-screen">
+    <section class="login-form-container flex items-center justify-center min-h-screen hidden">
         <div class="form-div bg-white px-8 py-4 w-4/12 mx-auto text-center shadow-lg rounded-lg">
             <div class="form-header text-center space-y-2">
                 <div>
@@ -38,8 +42,8 @@
                 <span class="text-purple-700 text-sm">Default: admin123</span>
 
                 <!-- submit button -->
-                 <button class="btn btn-primary text-white">Sign In</button>
-                 <hr class="text-gray-300 mt-5">
+                <button class="btn btn-primary text-white">Sign In</button>
+                <hr class="text-gray-300 mt-5">
             </form>
             <div class="form-footer mt-4">
                 <h5 class="text-gray-400 font-medium text-sm">Demo Credentials:</h5>
@@ -50,6 +54,27 @@
             </div>
         </div>
         </div>
+    </section>
+
+    <!-- main content section -->
+    <section class="">
+        <!-- header -->
+        <header class="bg-white p-3 flex items-center justify-between px-16">
+            <aside class="flex items-center justify-center gap-2">
+                <img src="./images/github-logo.png" alt="" class="w-8">
+                <h2 class="font-bold text-lg">GitHub Issue Tracker</h2>
+            </aside>
+            <aside class="flex items-center justify-center gap-2">
+                <div class="relative">
+                    <input type="text" placeholder="Search Issues..." class="px-8 py-2 outline-none border-gray-300 rounded-md">
+                    <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-2 -translate-y-1/2 pointer-events-none text-slate-300"></i>
+
+                </div> <button class="btn btn-primary">
+                    <i class="fa-solid fa-plus"></i>
+                    <h5>New Issue</h5>
+                </button>
+            </aside>
+        </header>
     </section>
 
     <!-- js file added here -->
